@@ -68,6 +68,8 @@ def compare_dir_layout(dir1, dir2):
     only_in_dir1 = {files_dir1[k] for k in only_in_dir1_keys}
     only_in_dir2 = {files_dir2[k] for k in only_in_dir2_keys}
 
+    # I'm lazy and didn't want to fix variables so  just strip what I need to. 
+
     if not only_in_dir1 and not only_in_dir2:
        print("\n- Directories Have Same Files")
     else:
@@ -81,9 +83,6 @@ def compare_dir_layout(dir1, dir2):
 
 
     return only_in_dir1, only_in_dir2
-
-    
-   
     
         
 def compare_hashes(hashes1, hashes2, dir1_diff, dir2_diff):
@@ -139,7 +138,7 @@ if __name__ == "__main__":
     diffs = compare_hashes(hashes1, hashes2, dir1_diff, dir2_diff)
 
 
-
+    # I'm lazy and didn't want to fix variables so  just strip what I need to. 
 
     if not diffs:
        print("\nNo differences found. Directories match.")
